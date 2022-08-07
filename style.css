@@ -137,12 +137,6 @@
     position: relative;
     left: 4.3%;
     
-    
-
-    
-
-    
-    
 }
 
 .stories > div {
@@ -386,14 +380,149 @@
     font-size: 11px;
 }
 
+.inf_bar{
+    display: none;
+}
+
 
 @media (max-width: 935px) {
     
-    body{
-        background-color: blue;
-    }
-
+    
     .top_bar{
         justify-content: space-between;
     }
+
+    .top_bar > div:nth-child(2){
+        margin: 0%;
+    }
+    .top_bar > div:last-child{
+
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .top_bar > div:first-child{
+
+        margin-left: 1%;
+        margin-right: 0%;
+    }
+    .sidebar{
+        display: none;
+    }
+
+    .sto_bar{
+        
+        width:50%;
+        
+        margin-left: 0%;
+        margin-right: 30%;
+        
+    }
+    .stories > img {
+        left: 0.5%;
+        
+    }
+    .stories{
+    
+        width: 9.4%;
+        
+        margin: 2% 2.3% 0% 2%;
+
+    }
+
+    .posts{
+        margin-left: 0%;
+        margin-right: 0%;
+
+    }
+    .post{
+        width: 80%;
+    }
+    .conteudo{
+        justify-content: center;
+    }
+    .sto_bar ion-icon{    
+        top: 21%;
+        left: 87%;
+    }
+}
+
+@media (max-width:614px) {
+
+    body{
+        background-color: #139EF2;
+    }
+
+    .sto_bar{
+        background-color: 0;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .conteudo{
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .conteudo > div:first-child{
+        margin-left: 0%;
+        width: 100%;
+        border-right: 0px;
+        border-left: 0px;
+    }
+    .sto_bar ion-icon{    
+        display: none;
+    }
+    .stories{
+    
+        width: 9.4%;
+        
+        margin: 2% 2.0% 0% 2%;
+
+    }
+    .stories > img {
+        left: 0%;
+        
+        
+    }
+    .stories > div {
+        position: absolute;
+        z-index: 1;
+        top: 6%;
+        left: 9%;
+
+    }
+    .post{
+        width: 100%;
+
+        border-right: 0px;
+        border-left: 0px;
+    }
+
+    .inf_bar{
+        position: fixed;
+        bottom: 0%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 54px;
+        width: 100%;
+
+        background-color: #FFFFFF;
+
+       
+    }
+    .inf_bar ion-icon{
+        
+        font-size: 16px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 1);
+
+        width: 11%;
+        height: 40%;
+    }
+   
+    
 }
